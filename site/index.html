@@ -5,39 +5,104 @@
 	<head>
 		<title>Drifts</title>
 		<meta charset="utf-8">
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-		<!-- Optional theme -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
 		<style>
-			.darkBG {
-				background: #999;
-			}
 
-			.darkerBG {
-				background: #666;
-			}
+		#container {
+			width: 960px;
+			margin: 0px auto;
+			
+			
+		}
 
-			.darkestBG {
-				background: #333;
+		#left-column {
+			width: 700px;
+			background: blue;
+			float: left;
+			
+			
+		}
+
+		p {
+			margin: 40px 0px 0px 0px;
+			color: black;
+			font-family: helvetica;
+			column-count: 2;
+			column-gap: 25px;
+			column-rule: 1px dotted coral;
+			column-rule-width: 2px;
+		}
+
+		#right-column, #left-column{
+			font-family: helvetica;
+			color: white;
+		}
+
+		#right-column {
+			width: 260px;
+			background: orange;
+			float: left;
+			
+		}
+
+		#banner {
+			width: 960px;
+			height: 200px;
+			background: red;
+		}
+
+		/**** Responsive Design using Media Queries ****/
+
+		@media screen and (max-width: 959px) {
+			#container, #banner, p {
+				width: 100%;
+				height: auto;
 			}
+			#left-column {
+				width: 70%;
+			}
+			#right-column {
+				width: 30%;
+			}
+		}
+		@media screen and (max-width: 640px) {
+			#left-column {
+				width: 100%;
+			}
+			#right-column {
+				width: 100%;
+			}
+		@media screen and (max-width: 320px) {
+			#container {
+				width: 320px;
+			}
+		} 
+
 		</style>
 	</head>
 
 	<body>
 
-		<div class="container">
-		<div class="row">
-			<div class="darkBG col-sm-6 col-xs-12">test</div>
-			<div class="darkerBG col-sm-3 col-xs-6">test2</div>
-			<div class="darkestBG col-sm-3 col-xs-6">test3</div>
-		</div>
+		<div id="container">
+			<img src="http://i64.tinypic.com/8y71gj.png" id="banner">
+			<section id="left-column">
+			 This is the left column and we are going to try and make it responsive.
+			</section>
+			<aside id="right-column">
+				this is the RIGHT column ya?
+			</aside>
+			<p>Frank Ocean’s new Endless visual album, available exclusively via Apple Music, may be the last release of its kind for Universal Music Group. Yesterday, a source familiar with the situation told Pitchfork that Endless, which came out on August 19, fulfilled Ocean’s obligation to Universal and Def Jam. Ocean’s other new album, Blonde, which arrived on August 20, was self-released, the source said. Endless was released only as a video stream; Blonde is a 17-song album available as a stream or paid download exclusively from Apple. Now, Billboard reports that UMG chairman/CEO Lucian Grainge followed Ocean’s moves by telling his label executives that Universal would no longer do single-platform, global streaming exclusives. It was unclear whether Ocean’s actions directly precipitated Grainge’s decision. A source also told Billboard that UMG could potentially have a legal case against Ocean.</p>
+
+			<div id="a">a</div>
+			<div id="b">b</div>
+			<div id="c">c</div>
+			<div id="d">d</div>
+			<div id="e">e</div>
+			<div id="f">f</div>
+			<div id="g">g</div>
+			<div id="h">h</div>
 		</div>
 
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		
 	</body>
 
 </html>
